@@ -6,3 +6,9 @@ var sqr = n => n*n;
 var sqr_result = sqr(3);
 
 console.log(sqr_result);
+
+// traditional javascript way
+function square(n) {
+  return n*n;
+}
+console.log(square(3));
