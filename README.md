@@ -1,0 +1,1 @@
+- `arrow_functions` folder has arrow function scripts, those scripts also converted with traditional javascript way
