@@ -1,0 +1,2 @@
+- https://davidwalsh.name/for-and-against-let#implicit-hazards
+- https://mathiasbynens.be/notes/es6-const
