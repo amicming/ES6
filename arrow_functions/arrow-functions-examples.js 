@@ -1,0 +1,29 @@
+const race = '100m Dash';
+const winners = ['darshan pandya', 'vasistha pandya', 'amit pandya'];
+// Now let's create a object of winner, means 
+/*
+{
+	name: 'amit pandya',
+	place: 1,
+	race: race //above variable
+}
+*/
+// but let's say we don't have data in proper format (means we've in Array form) and we need to 
+// create a object, we can do with Arrow function
+const win = winners.map((winner, i) => ({name: winner, race: race, place: i +1 }));
+console.table(win);
+// Here we added brackets for return implicit return, ecample of 
+// ({name: winner, race: race, place: i }))
+// before and after {}, we added. That will do implicit return
+// Note: here `race: race` is a little bit redundant, as per new features of ES6, 
+// if variable and property name both are equal, we can just write `race`
+// example of 
+const win_new_way = winners.map((winner, i) => ({name: winner, race, place: i+1}));
+console.table(win_new_way);
+// Above all stuffs for implicit return with an Object literal
+
+// Some condition with Arrow Function 
+// Find out (filter) people age older than 60
+const ages = [23,62,45,65,2,69,34,62,39]
+const old = ages.filter(age => age >= 60);
+console.log(old);
